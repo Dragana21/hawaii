@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Veliko Ostrvo-Havaji</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #4E5869;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	background-color: #8090AB;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #6F7D94;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 180px;
+	background-color: #6F7D94;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 780px;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #6F7D94;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #8090AB;
+	color: #000;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="slike/vulkan.jpg" alt="Insert Logo Here" name="Insert_logo" width="250" height="250" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+     <li><a href="havaji.html">Home</a></li>
+      <li><a href="aboutt.html">About</a></li>
+      <li><a href="Maui.html">Maui</a></li>
+      <li><a href="Oahu.html">Oahu</a></li>
+      <li><a href="Veliko Ostrvo.html">Veliko ostrvo</a></li>
+      <li><a href="Kauai.html">Kauai</a></li>
+    </ul>
+    <p>Veliko ostrvo ili Havaji (10.451 km2,135.400 st.) je najveće ostrvo arhipelaga i zauzima 2/3 površine države. Karakteristično je po velikim prirodnim kontrastima. Na ovom ostrvu se mogu videti aktivni vulkani, planinski vrhovi pod snegom, beživotni potoci lave, bujne priobalne doline, visoki klifovi, pašnjaci, pustinje i kišne šume. 
+Geološki, to je najmlađe Havajsko ostrvo, i jedino koje i dalje raste. Najviše planine Havaja se nalaze na ovom ostrvu. Visina Mauna Kee iznad mora je 4.205 m, a Mauna Loe 4.165 m. Ako se zanemari postojanje okeana u određivanju visine planine, ove planine bi bile najviše na svetu. Najjužnija tačka ostrva, rt Ka Le (Ka Lae) je najjužnija tačka SAD.</p>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>Popularna mesta</h1>
+    <p><strong>Hilo.</strong></p> 
+    <p>Hilo je glavni grad Velikog ostrva, smešten je u velikom, polukružnom zalivu, na istoku ostrva i druga je po veličini luka na Havajima. Jedna trećina ostrvske populacije (oko 32.000 stanovnika) živi u Hilu. Hilo je grad kome ne nedostaju bujne, prirodne lepote, ali mu nedostaju sunčani dani. Prosečno godišnje, u Hilu je 278 dana kišovito. Zbog svoje reputacije “najkišovitiji grad u Americi”, Hilo je izbegao invaziju izgradnje i razvoja, koja je zahvatila ostatak ostrva. Hilo je poznat po banjan drveću, koje je 30-ih godina XX veka zasadila kraljevska porodica i poznate ličnosti koje su u to vreme boravile na Hilu. Banjan drveće je specifično po tome što svaka grana koja dotakne zemlju se razvija u novo stablo. Od prirodnih atrakcija, u Hilu se mogu posetiti brojne bašte, parkovi, vodopadi, pa čak i tropski zoološki vrt, jedini u SAD. Plaže nisu primarni motiv dolaska turista u Hilo, iako ne zaostaju mnogo po kvalitetu za ostalim popularnim plažama.</p>
+
+<p><strong>Kona.</strong></p>
+<p>Bukvalan prevod reči kona je zaštićena strana, tako da ime oblasti upućuje na suvu, sunčanu, zapadnu obalu Velikog ostrva. Let ka Keahole aerodromu preko Kone može izazvati šok kod turista koji očekuju da će videti tropsko zelenilo. Iz aviona se vidi lavično, pusto tlo, kao da je ostrvo prekriveno asfaltom. Međutim, ne treba paničiti, osim lavičnih pejsaža, na ostrvu se nalaze brojne atrakcije.</p>
+
+<p><strong>Kailua – Kona</strong></p>
+<p>Glavni grad oblasti Kona, je u XIX veku bio omiljeno odmaralište kraljevske porodice. Pogodnosti ove oblasti su sunčano vreme tokom čitave godine, divni pejsaži, istorijske znamenitosti, mogućnost različitih sportskih aktivnosti itd.</p>
+
+<p><strong>Hilton Vaikoloa Vilidž (Hilton Waikoloa Village)</strong></p>
+<p>Najekstravagantnija atrakcija Velikog ostrva. U okviru hotelskog kompleksa je tematski park kome su ostrvljani dali ime Diznilend. Hotel nije imao plažu, pa je sagrađena. Napravljena je laguna sa slanom vodom i u nju su ubačene tropske ribe. Duž veštačkih kanala, između zgrada, turisti se prevoze specijalnim brodićima. Prevoz je moguć i modernim tramvajem koji izgleda kao da je stigao iz centra Tokia. U okviru hotela se pružaju bazeni sa kaskadnim vodopadima iznad kojih su viseći mostovi. Izgradnja hotela je koštala $360 miliona, 1988. godine. Pored ekstravagancije, atmosfera je veoma opuštena i neobavezna. Hotel poseduje vrednu umetničku kolekciju iz Melanezije, Polinezije i Azije.</p>
+
+<p><strong>Palatu Hulihe (Hulihee)</strong></p>
+<p>Palatu Huligeje 1838. godine izgradio guverner Kuakini, a od 1885. godine prelazi u vlasništvo kraljevske porodice. Početkom XX.veka palata je pretvorena u muzej. Zanimljivo je pomenuti da su članovi Havajske kraljevske porodice bili veoma krupni, pa je u palati sve prilagođeno njihovim proporcijama. Princeza Rut Kelikolani je jedna od poznatijih stanara ove palate. Čuvena je po tome što je bila teška preko 180 kilograma i što je radije boravila u kolibi na travi ispred palate, nego u palati. Palata je opremljena uglavnom antikvitetima, od kojih su mnogi doneti sa kraljevskih putovanja po Evropi.</p>
+
+    <!-- end .content --></div>
+  <div class="footer">
+    <p><strong>Dragana Milosavljevic VI-1, Copyright &copy; 2018</strong></p>
+    <!-- end .footer --></div>
+<!-- end .container --></div>
+</body>
+</html>
